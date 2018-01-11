@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.user.CSJ_RealNameAuthenticationMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.user.CSJ_RealNameAuthentication" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="u_id" property="uId" jdbcType="INTEGER" />
+    <result column="last_authentication_time" property="lastAuthenticationTime" jdbcType="TIMESTAMP" />
+    <result column="authentication_frequency" property="authenticationFrequency" jdbcType="INTEGER" />
+    <result column="total_frequency" property="totalFrequency" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.user.CSJ_UserFavoriteMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.user.CSJ_UserFavorite" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="product_id" property="productId" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="batch_number" property="batchNumber" jdbcType="VARCHAR" />
+    <result column="dist_id" property="distId" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

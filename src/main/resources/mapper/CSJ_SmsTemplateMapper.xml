@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.CSJ_SmsTemplateMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.CSJ_SmsTemplate" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="call_index" property="callIndex" jdbcType="VARCHAR" />
+    <result column="mail_title" property="mailTitle" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="is_sys" property="isSys" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

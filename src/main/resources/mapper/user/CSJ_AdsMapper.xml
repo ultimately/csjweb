@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.CSJ_AdsMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.CSJ_Ads" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="is_lock" property="isLock" jdbcType="TINYINT" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="img_logo" property="imgLogo" jdbcType="VARCHAR" />
+    <result column="ads_map" property="adsMap" jdbcType="INTEGER" />
+    <result column="sort" property="sort" jdbcType="INTEGER" />
+    <result column="ad_start_time" property="adStartTime" jdbcType="TIMESTAMP" />
+    <result column="ad_end_time" property="adEndTime" jdbcType="TIMESTAMP" />
+    <result column="img_logo_app" property="imgLogoApp" jdbcType="VARCHAR" />
+    <result column="ads_type" property="adsType" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

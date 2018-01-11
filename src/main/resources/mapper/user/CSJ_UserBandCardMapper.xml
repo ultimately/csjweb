@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.user.CSJ_UserBandCardMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.user.CSJ_UserBandCard" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="Id" property="id" jdbcType="INTEGER" />
+    <result column="UserId" property="userid" jdbcType="INTEGER" />
+    <result column="BandName" property="bandname" jdbcType="VARCHAR" />
+    <result column="CardNo" property="cardno" jdbcType="VARCHAR" />
+    <result column="CreateDate" property="createdate" jdbcType="TIMESTAMP" />
+    <result column="BandType" property="bandtype" jdbcType="VARCHAR" />
+    <result column="BranchBank" property="branchbank" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

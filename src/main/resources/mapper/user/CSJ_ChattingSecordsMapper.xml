@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.user.CSJ_ChattingSecordsMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.user.CSJ_ChattingSecords" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="from_account" property="fromAccount" jdbcType="VARCHAR" />
+    <result column="tim_text_elem" property="timTextElem" jdbcType="VARCHAR" />
+    <result column="tim_face_elem" property="timFaceElem" jdbcType="VARCHAR" />
+    <result column="tim_custom_elem" property="timCustomElem" jdbcType="VARCHAR" />
+    <result column="tim_sound_elem" property="timSoundElem" jdbcType="VARCHAR" />
+    <result column="time_image_elem" property="timeImageElem" jdbcType="VARCHAR" />
+    <result column="to_account" property="toAccount" jdbcType="VARCHAR" />
+    <result column="msg_time" property="msgTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

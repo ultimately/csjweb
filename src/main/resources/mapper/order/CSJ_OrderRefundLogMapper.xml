@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.order.CSJ_OrderRefundLogMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.order.CSJ_OrderRefundLog" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="manager_id" property="managerId" jdbcType="INTEGER" />
+    <result column="manager_name" property="managerName" jdbcType="VARCHAR" />
+    <result column="check_time" property="checkTime" jdbcType="TIMESTAMP" />
+    <result column="check_status" property="checkStatus" jdbcType="INTEGER" />
+    <result column="check_message" property="checkMessage" jdbcType="VARCHAR" />
+    <result column="refund_id" property="refundId" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.qclive.CSJ_QCLiveFocusMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.qclive.CSJ_QCLiveFocus" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="live_id" property="liveId" jdbcType="INTEGER" />
+    <result column="fu_id" property="fuId" jdbcType="INTEGER" />
+    <result column="au_id" property="auId" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

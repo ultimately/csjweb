@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.user.CSJ_CommissionCashMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.user.CSJ_CommissionCash" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="INTEGER" />
+    <result column="cashwithdrawal_amount" property="cashwithdrawalAmount" jdbcType="DECIMAL" />
+    <result column="add_time" property="addTime" jdbcType="TIMESTAMP" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="msg" property="msg" jdbcType="VARCHAR" />
+    <result column="withdraws_type" property="withdrawsType" jdbcType="VARCHAR" />
+    <result column="withdraws_account" property="withdrawsAccount" jdbcType="VARCHAR" />
+    <result column="audit_finance" property="auditFinance" jdbcType="VARCHAR" />
+    <result column="finance_audit_time" property="financeAuditTime" jdbcType="TIMESTAMP" />
+    <result column="audit_boss" property="auditBoss" jdbcType="VARCHAR" />
+    <result column="boss_audit_time" property="bossAuditTime" jdbcType="TIMESTAMP" />
+    <result column="band_name" property="bandName" jdbcType="VARCHAR" />
+    <result column="account_name" property="accountName" jdbcType="VARCHAR" />
+    <result column="account_phone" property="accountPhone" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

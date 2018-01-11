@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.order.CSJ_OrderRefundMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.order.CSJ_OrderRefund" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="payment_amount" property="paymentAmount" jdbcType="DECIMAL" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="return_type" property="returnType" jdbcType="VARCHAR" />
+    <result column="receiving_state" property="receivingState" jdbcType="VARCHAR" />
+    <result column="refund_reason" property="refundReason" jdbcType="VARCHAR" />
+    <result column="refund_amount" property="refundAmount" jdbcType="DECIMAL" />
+    <result column="refund_desc" property="refundDesc" jdbcType="VARCHAR" />
+    <result column="refund_url" property="refundUrl" jdbcType="VARCHAR" />
+    <result column="order_no" property="orderNo" jdbcType="VARCHAR" />
+    <result column="express" property="express" jdbcType="VARCHAR" />
+    <result column="product_id" property="productId" jdbcType="INTEGER" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="express_no" property="expressNo" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="last_check_date" property="lastCheckDate" jdbcType="TIMESTAMP" />
+    <result column="refound_time" property="refoundTime" jdbcType="TIMESTAMP" />
+    <result column="refound_num" property="refoundNum" jdbcType="VARCHAR" />
+    <result column="notify_time" property="notifyTime" jdbcType="TIMESTAMP" />
+    <result column="quantity" property="quantity" jdbcType="INTEGER" />
+    <result column="supply_id" property="supplyId" jdbcType="INTEGER" />
+    <result column="user_is_delete" property="userIsDelete" jdbcType="INTEGER" />
+    <result column="supply_is_delete" property="supplyIsDelete" jdbcType="INTEGER" />
+    <result column="is_certificate" property="isCertificate" jdbcType="INTEGER" />
+    <result column="certificate_amount" property="certificateAmount" jdbcType="DECIMAL" />
+  </resultMap>
+</mapper>

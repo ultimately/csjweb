@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--<properties resource="dev.properties"/>-->
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <property name="mergeable" value="false"></property>
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+        </plugin>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://192.168.1.15:3306/test002?useUnicode=true&amp;characterEncoding=UTF8"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="${targetModelPackage}" targetProject="${targetJavaProject}"/>
+
+        <sqlMapGenerator targetPackage="${targetXMLPackage}" targetProject="${targetResourcesProject}"/>
+
+        <javaClientGenerator targetPackage="${targetMapperPackage}" targetProject="${targetJavaProject}"
+                             type="XMLMAPPER"/>
+
+        <!--<table tableName="base_user" domainObjectName="User" >-->
+        <!--<generatedKey column="id" identity="false" sqlStatement="myql"/>-->
+        <!--</table>-->
+        <!--<table tableName="base_menu" domainObjectName="Menu" >-->
+        <!--<generatedKey column="id" identity="false" sqlStatement="myql"/>-->
+        <!--</table>-->
+        <!--<table tableName="base_group" domainObjectName="Group" >
+            &lt;!&ndash;<generatedKey column="id" identity="true"/>&ndash;&gt;
+        </table>
+        <table tableName="base_group_type" domainObjectName="GroupType" >
+        </table>-->
+        <!--<table tableName="base_resource_authority" domainObjectName="ResourceAuthority" >
+        </table>-->
+        <!--<table tableName="base_element" domainObjectName="Element">-->
+        <!--</table>-->
+        <!--<table tableName="gate_client" domainObjectName="GateClient">-->
+        <!--</table>-->
+       <!-- <table tableName="csj_adproducts" domainObjectName="CSJ_Adproducts"></table>
+        <table tableName="csj_ads" domainObjectName="CSJ_Ads"></table>
+        <table tableName="csj_advise" domainObjectName="CSJ_Advise"></table>
+        <table tableName="csj_areas" domainObjectName="CSJ_Areas"></table>
+        <table tableName="csj_article_category" domainObjectName="CSJ_ArticleCategory"></table>
+        <table tableName="csj_bargain_activity" domainObjectName="CSJ_BargainActivity"></table>
+        <table tableName="csj_bargain_user" domainObjectName="CSJ_BargainUser"></table>
+        <table tableName="csj_bargain_user_friend" domainObjectName="CSJ_BargainUserFriend"></table>
+        <table tableName="csj_certificate_standard" domainObjectName="CSJ_CertificateStandard"></table>
+        <table tableName="csj_chatting_secords" domainObjectName="CSJ_ChattingSecords"></table>
+        <table tableName="csj_commission" domainObjectName="CSJ_Commission"></table>
+        <table tableName="csj_commission_cash" domainObjectName="CSJ_CommissionCash"></table>
+        <table tableName="csj_commission_platform" domainObjectName="CSJ_CommissionPlatform"></table>
+        <table tableName="csj_commission_record" domainObjectName="CSJ_CommissionRecord"></table>
+        <table tableName="csj_coupon" domainObjectName="CSJ_Coupon"></table>
+        <table tableName="csj_coupon_user_claim" domainObjectName="CSJ_CouponUserClaim"></table>
+        <table tableName="csj_distributor_info" domainObjectName="CSJ_DistributorInfo"></table>
+        <table tableName="csj_dynamic" domainObjectName="CSJ_Dynamic"></table>
+        <table tableName="csj_dynamic_comment" domainObjectName="CSJ_DynamicComment"></table>
+        <table tableName="csj_dynamic_like" domainObjectName="CSJ_DynamicLike"></table>
+        <table tableName="csj_dynamic_thumb" domainObjectName="CSJ_DynamicThumb"></table>
+        <table tableName="csj_erp_and_products_types" domainObjectName="CSJ_ERPProductsTypes"></table>
+        <table tableName="csj_erp_products_log" domainObjectName="CSJ_ERPProductsLog"></table>
+        <table tableName="csj_grade" domainObjectName="CSJ_Grade"></table>
+        <table tableName="csj_help" domainObjectName="CSJ_Help"></table>
+        <table tableName="csj_help_category" domainObjectName="CSJ_HelpCategory"></table>
+        <table tableName="csj_manager_log" domainObjectName="CSJ_ManagerLog"></table>
+        <table tableName="csj_manager_roles" domainObjectName="CSJ_Manager_Roles"></table>
+        <table tableName="csj_managerroles" domainObjectName="CSJ_ManagerRoles"></table>
+        <table tableName="csj_managers" domainObjectName="CSJ_Managers"></table>
+        <table tableName="csj_module_roles" domainObjectName="CSJ_ModuleRoles"></table>
+        <table tableName="csj_modules" domainObjectName="CSJ_Modules"></table>
+        <table tableName="csj_nation" domainObjectName="CSJ_Nation"></table>
+        <table tableName="csj_news" domainObjectName="CSJ_News"></table>
+        <table tableName="csj_order_infos" domainObjectName="CSJ_OrderInfos"></table>
+        <table tableName="csj_order_refund" domainObjectName="CSJ_OrderRefund"></table>
+        <table tableName="csj_order_refund_log" domainObjectName="CSJ_OrderRefundLog"></table>
+        <table tableName="csj_orders" domainObjectName="CSJ_Orders"></table>
+        <table tableName="csj_orders_log" domainObjectName="CSJ_OrdersLog"></table>
+        <table tableName="csj_p_orders" domainObjectName="CSJ_Porders"></table>
+
+        <table tableName="csj_payment" domainObjectName="CSJ_PayMent"></table>
+        <table tableName="csj_producer" domainObjectName="CSJ_Producer"></table>
+        <table tableName="csj_product_amount_change_log" domainObjectName="CSJ_ProductAmountChangeLog"></table>
+        <table tableName="csj_product_category" domainObjectName="CSJ_ProductCategory"></table>
+        <table tableName="csj_product_distribution" domainObjectName="CSJ_ProductDistribution"></table>
+        <table tableName="csj_product_news" domainObjectName="CSJ_ProductNews"></table>
+        <table tableName="csj_product_plant" domainObjectName="CSJ_ProductPlant"></table>
+        <table tableName="csj_product_property" domainObjectName="CJS_ProductProperty"></table>
+        <table tableName="csj_product_repair" domainObjectName="CSJ_ProductRepair"></table>
+        <table tableName="csj_product_sale_record" domainObjectName="CSJ_ProductSaleRecord"></table>
+        <table tableName="csj_product_sale_record_log" domainObjectName="CSJ_ProductSaleRecordLog"></table>
+        <table tableName="csj_product_thumb" domainObjectName="CSJ_ProductThumb"></table>
+        <table tableName="csj_products" domainObjectName="CSJ_Products"></table>
+        <table tableName="csj_products_agency" domainObjectName="CSJ_ProductSagency"></table>
+        <table tableName="csj_products_app_log" domainObjectName="CSJ_ProductAppLog"></table>
+        <table tableName="csj_products_type" domainObjectName="CSJ_ProductType"></table>
+        <table tableName="csj_qc_live" domainObjectName="CSJ_QClive"></table>
+        <table tableName="csj_qc_live_anchor" domainObjectName="CSJ_QCLiveAnchor"></table>
+        <table tableName="csj_qc_live_focus" domainObjectName="CSJ_QCLiveFocus"></table>
+        <table tableName="csj_qc_live_look_record" domainObjectName="CSJ_QCLiveLookRecord"></table>
+        <table tableName="csj_qc_live_products" domainObjectName="CSJ_QCLiveProducts"></table>
+        <table tableName="csj_qc_live_remind" domainObjectName="CSJ_QCLiveRemind"></table>
+        <table tableName="csj_qc_live_report" domainObjectName="CSJ_QCLiveReport"></table>
+        <table tableName="csj_qc_live_vod" domainObjectName="CSJ_QCLiveVOD"></table>
+        <table tableName="csj_qc_live_vod_contact" domainObjectName="CSJ_QCLiveVODContact"></table>
+        <table tableName="csj_realname_authentication" domainObjectName="CSJ_RealNameAuthentication"></table>
+        <table tableName="csj_remark_name" domainObjectName="CSJ_RemarkName"></table>
+        <table tableName="csj_rules" domainObjectName="CSJ_Rules"></table>
+        <table tableName="csj_self_products" domainObjectName="CSJ_SelfProducts"></table>
+        <table tableName="csj_self_product_thumb" domainObjectName="CSJ_SelfProductThumb"></table>
+        <table tableName="csj_shape" domainObjectName="CSJ_Shape"></table>
+        <table tableName="csj_sms_template" domainObjectName="CSJ_SmsTemplate"></table>
+        <table tableName="csj_subject" domainObjectName="CSJ_Subject"></table>
+        <table tableName="csj_sub_products" domainObjectName="CSJ_SubProducts"></table>
+        <table tableName="csj_supplier_cards" domainObjectName="CSJ_SupplierCards"></table>
+        <table tableName="csj_supplier_withdraws" domainObjectName="CSJ_SupplierWithdraws"></table>
+        <table tableName="csj_texture" domainObjectName="CSJ_Texture"></table>
+        <table tableName="csj_theme" domainObjectName="CSJ_Theme"></table>
+        <table tableName="csj_thirdparty_user" domainObjectName="CSJ_ThirdPartyUser"></table>
+        <table tableName="csj_use" domainObjectName="CSJ_Use"></table>
+        <table tableName="csj_user_address" domainObjectName="CSJ_UserAddress"></table>
+        <table tableName="csj_user_band_card" domainObjectName="CSJ_UserBandCard"></table>
+        <table tableName="csj_user_cart" domainObjectName="CSJ_UserCart"></table>
+        <table tableName="csj_user_cart_detail" domainObjectName="CSJ_UserCartDetail"></table>
+        <table tableName="csj_user_favorite" domainObjectName="CSJ_UserFavorite"></table>
+        <table tableName="csj_user_log" domainObjectName="CSJ_UserLog"></table>
+        <table tableName="csj_users" domainObjectName="CSJ_Users"></table>-->
+        <!--<table tableName="csj_pay_category_copy" domainObjectName="CSJ_PayCategoryCopy"></table>-->
+
+        <table tableName="csj_user_address" domainObjectName="CSJ_UserAddress"></table>
+    </context>
+</generatorConfiguration>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.user.CSJ_CommissionMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.user.CSJ_Commission" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="INTEGER" />
+    <result column="total_commission_amount" property="totalCommissionAmount" jdbcType="DECIMAL" />
+    <result column="total_cashwithdrawal" property="totalCashwithdrawal" jdbcType="DECIMAL" />
+    <result column="freezing_amount" property="freezingAmount" jdbcType="DECIMAL" />
+    <result column="total_amount_available" property="totalAmountAvailable" jdbcType="DECIMAL" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="total_consumption_amount" property="totalConsumptionAmount" jdbcType="DECIMAL" />
+  </resultMap>
+</mapper>

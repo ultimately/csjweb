@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.product.CSJ_ProductsMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.product.CSJ_Products" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="product_code" property="productCode" jdbcType="VARCHAR" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+    <result column="short_description" property="shortDescription" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="category_id" property="categoryId" jdbcType="INTEGER" />
+    <result column="shape_code" property="shapeCode" jdbcType="VARCHAR" />
+    <result column="theme_code" property="themeCode" jdbcType="VARCHAR" />
+    <result column="grade_code" property="gradeCode" jdbcType="VARCHAR" />
+    <result column="texture_code" property="textureCode" jdbcType="VARCHAR" />
+    <result column="use_code" property="useCode" jdbcType="VARCHAR" />
+    <result column="rule_code" property="ruleCode" jdbcType="VARCHAR" />
+    <result column="erp_number" property="erpNumber" jdbcType="INTEGER" />
+    <result column="product_title" property="productTitle" jdbcType="VARCHAR" />
+    <result column="unit" property="unit" jdbcType="VARCHAR" />
+    <result column="sec_unit" property="secUnit" jdbcType="VARCHAR" />
+    <result column="sale_price" property="salePrice" jdbcType="DECIMAL" />
+    <result column="ref_sale_price" property="refSalePrice" jdbcType="DECIMAL" />
+    <result column="product_status" property="productStatus" jdbcType="INTEGER" />
+    <result column="product_count" property="productCount" jdbcType="INTEGER" />
+    <result column="product_sale_count" property="productSaleCount" jdbcType="INTEGER" />
+    <result column="product_pic" property="productPic" jdbcType="VARCHAR" />
+    <result column="erp_batch_no" property="erpBatchNo" jdbcType="VARCHAR" />
+    <result column="is_sold_out" property="isSoldOut" jdbcType="TINYINT" />
+    <result column="user_no" property="userNo" jdbcType="VARCHAR" />
+    <result column="product_amount" property="productAmount" jdbcType="DECIMAL" />
+    <result column="weight" property="weight" jdbcType="DECIMAL" />
+    <result column="product_sort" property="productSort" jdbcType="INTEGER" />
+    <result column="new_time" property="newTime" jdbcType="TIMESTAMP" />
+    <result column="video_type" property="videoType" jdbcType="INTEGER" />
+    <result column="plant_product_id" property="plantProductId" jdbcType="INTEGER" />
+    <result column="watch_num" property="watchNum" jdbcType="VARCHAR" />
+    <result column="product_type" property="productType" jdbcType="VARCHAR" />
+    <result column="price_type" property="priceType" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

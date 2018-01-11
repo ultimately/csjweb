@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.user.CSJ_DistributorInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.user.CSJ_DistributorInfo" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="link_man" property="linkMan" jdbcType="VARCHAR" />
+    <result column="business_license" property="businessLicense" jdbcType="VARCHAR" />
+    <result column="point" property="point" jdbcType="INTEGER" />
+    <result column="parent_id" property="parentId" jdbcType="INTEGER" />
+    <result column="grade" property="grade" jdbcType="INTEGER" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="auth_key" property="authKey" jdbcType="VARCHAR" />
+    <result column="discount" property="discount" jdbcType="DECIMAL" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="shop_license" property="shopLicense" jdbcType="VARCHAR" />
+    <result column="ischeck" property="ischeck" jdbcType="TINYINT" />
+    <result column="link_phone" property="linkPhone" jdbcType="VARCHAR" />
+    <result column="manager_id" property="managerId" jdbcType="INTEGER" />
+    <result column="manager_name" property="managerName" jdbcType="VARCHAR" />
+    <result column="manager_msg" property="managerMsg" jdbcType="VARCHAR" />
+    <result column="manager_time" property="managerTime" jdbcType="TIMESTAMP" />
+    <result column="card_id" property="cardId" jdbcType="VARCHAR" />
+    <result column="background_img" property="backgroundImg" jdbcType="VARCHAR" />
+    <result column="shop_name" property="shopName" jdbcType="VARCHAR" />
+    <result column="wx_number" property="wxNumber" jdbcType="VARCHAR" />
+    <result column="shop_message" property="shopMessage" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="province" property="province" jdbcType="VARCHAR" />
+    <result column="city" property="city" jdbcType="VARCHAR" />
+    <result column="county" property="county" jdbcType="TIMESTAMP" />
+    <result column="mark" property="mark" jdbcType="INTEGER" />
+    <result column="Item" property="item" jdbcType="TINYINT" />
+    <result column="Item1" property="item1" jdbcType="INTEGER" />
+    <result column="Item2" property="item2" jdbcType="INTEGER" />
+    <result column="Item3" property="item3" jdbcType="VARCHAR" />
+    <result column="Item4" property="item4" jdbcType="VARCHAR" />
+    <result column="Item5" property="item5" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

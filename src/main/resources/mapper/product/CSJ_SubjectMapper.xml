@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.product.CSJ_SubjectMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.product.CSJ_Subject" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="sub_start_time" property="subStartTime" jdbcType="TIMESTAMP" />
+    <result column="sub_end_time" property="subEndTime" jdbcType="TIMESTAMP" />
+    <result column="sub_map" property="subMap" jdbcType="INTEGER" />
+    <result column="img_logo" property="imgLogo" jdbcType="VARCHAR" />
+    <result column="img_logo_app" property="imgLogoApp" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+    <result column="is_lock" property="isLock" jdbcType="INTEGER" />
+    <result column="sort" property="sort" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

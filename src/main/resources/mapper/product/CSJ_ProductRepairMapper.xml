@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.product.CSJ_ProductRepairMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.product.CSJ_ProductRepair" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="uid" property="uid" jdbcType="INTEGER" />
+    <result column="pic_url" property="picUrl" jdbcType="VARCHAR" />
+    <result column="material" property="material" jdbcType="VARCHAR" />
+    <result column="number" property="number" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="handle_admin_id" property="handleAdminId" jdbcType="INTEGER" />
+    <result column="handle_time" property="handleTime" jdbcType="TIMESTAMP" />
+    <result column="offer" property="offer" jdbcType="DECIMAL" />
+    <result column="cs_tracking" property="csTracking" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

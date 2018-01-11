@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.product.CSJ_CertificateStandardMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.product.CSJ_CertificateStandard" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="gem_type" property="gemType" jdbcType="INTEGER" />
+    <result column="category_id" property="categoryId" jdbcType="INTEGER" />
+    <result column="category_code" property="categoryCode" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="min_weight" property="minWeight" jdbcType="INTEGER" />
+    <result column="max_weight" property="maxWeight" jdbcType="INTEGER" />
+    <result column="certificate_type" property="certificateType" jdbcType="INTEGER" />
+    <result column="certificate_authority" property="certificateAuthority" jdbcType="VARCHAR" />
+    <result column="certificate_amount" property="certificateAmount" jdbcType="DECIMAL" />
+    <result column="discount_amount" property="discountAmount" jdbcType="DECIMAL" />
+    <result column="norm" property="norm" jdbcType="VARCHAR" />
+    <result column="origin" property="origin" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

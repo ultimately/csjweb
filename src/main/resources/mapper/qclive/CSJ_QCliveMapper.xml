@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.qclive.CSJ_QCliveMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.qclive.CSJ_QClive" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="stream_id" property="streamId" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="group_id" property="groupId" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="live_type" property="liveType" jdbcType="INTEGER" />
+    <result column="flag" property="flag" jdbcType="INTEGER" />
+    <result column="live_status" property="liveStatus" jdbcType="INTEGER" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+    <result column="head_pic" property="headPic" jdbcType="VARCHAR" />
+    <result column="front_cover" property="frontCover" jdbcType="VARCHAR" />
+    <result column="live_intro" property="liveIntro" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="live_time" property="liveTime" jdbcType="TIMESTAMP" />
+    <result column="end_time" property="endTime" jdbcType="TIMESTAMP" />
+    <result column="pro_time" property="proTime" jdbcType="TIMESTAMP" />
+    <result column="push_url" property="pushUrl" jdbcType="VARCHAR" />
+    <result column="push_expire" property="pushExpire" jdbcType="INTEGER" />
+    <result column="play_url" property="playUrl" jdbcType="VARCHAR" />
+    <result column="file_id" property="fileId" jdbcType="VARCHAR" />
+    <result column="viewer_count" property="viewerCount" jdbcType="INTEGER" />
+    <result column="like_count" property="likeCount" jdbcType="INTEGER" />
+    <result column="cut_flow_time" property="cutFlowTime" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

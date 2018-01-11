@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.qclive.CSJ_QCLiveVODMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.qclive.CSJ_QCLiveVOD" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="stream_id" property="streamId" jdbcType="VARCHAR" />
+    <result column="video_id" property="videoId" jdbcType="VARCHAR" />
+    <result column="video_url" property="videoUrl" jdbcType="VARCHAR" />
+    <result column="file_size" property="fileSize" jdbcType="VARCHAR" />
+    <result column="start_time" property="startTime" jdbcType="INTEGER" />
+    <result column="end_time" property="endTime" jdbcType="INTEGER" />
+    <result column="file_id" property="fileId" jdbcType="VARCHAR" />
+    <result column="file_format" property="fileFormat" jdbcType="VARCHAR" />
+    <result column="vod2_flag" property="vod2Flag" jdbcType="INTEGER" />
+    <result column="record_file_id" property="recordFileId" jdbcType="VARCHAR" />
+    <result column="duration" property="duration" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.csj.csjweb.mapper.order.CSJ_OrderInfosMapper" >
+  <resultMap id="BaseResultMap" type="com.csj.csjweb.model.order.CSJ_OrderInfos" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="order_id" property="orderId" jdbcType="INTEGER" />
+    <result column="order_no" property="orderNo" jdbcType="VARCHAR" />
+    <result column="product_id" property="productId" jdbcType="INTEGER" />
+    <result column="product_price" property="productPrice" jdbcType="DECIMAL" />
+    <result column="quantity" property="quantity" jdbcType="INTEGER" />
+    <result column="product_name" property="productName" jdbcType="VARCHAR" />
+    <result column="product_pic" property="productPic" jdbcType="VARCHAR" />
+    <result column="discount" property="discount" jdbcType="DECIMAL" />
+    <result column="discount_price" property="discountPrice" jdbcType="DECIMAL" />
+    <result column="batch_number" property="batchNumber" jdbcType="VARCHAR" />
+    <result column="pay_product_price" property="payProductPrice" jdbcType="DECIMAL" />
+    <result column="coupon_amount" property="couponAmount" jdbcType="DECIMAL" />
+    <result column="certificate_authority" property="certificateAuthority" jdbcType="VARCHAR" />
+    <result column="certificate_amount" property="certificateAmount" jdbcType="DECIMAL" />
+    <result column="certificate_id" property="certificateId" jdbcType="INTEGER" />
+    <result column="certificate_num" property="certificateNum" jdbcType="VARCHAR" />
+    <result column="supplier_discount" property="supplierDiscount" jdbcType="DECIMAL" />
+  </resultMap>
+</mapper>
